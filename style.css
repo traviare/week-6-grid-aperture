@@ -123,6 +123,64 @@ section {
     align-self: center;
 }
 
+.content-4 {
+    grid-template-columns: 0.2fr 1.6fr 0.2fr 1fr 1fr;
+    grid-template-rows: repeat(6, 83px);
+}
+
+.content-4 h2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-self: flex-end;
+}
+
+.content-4 p {
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+    align-self: center;
+}
+
+.content-4 button {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    align-self: flex-start;
+}
+
+.content-4 img {
+    grid-column: 4 / 6;
+    grid-row: 1 / 7;
+    justify-items: stretch;
+}
+
+.content-4 div {
+    grid-column: 5 / 6;
+    grid-row: 6 / 7;
+}
+
+.content-5 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 150px);
+}
+
+.content-5 h2 {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    align-self: flex-end;
+}
+
+.content-5 p {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+    align-self: flex-start;
+}
+
+
+.content-5 div {
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+    align-self: center;
+}
+
 body {
     font-family: 'Poppins';
     font-style: normal;
@@ -164,6 +222,7 @@ body {
 .content-2 h3 {
     letter-spacing: 2px;
     text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 #content-2-p {
@@ -177,6 +236,31 @@ body {
     line-height: 20px;
 }
 
+.content-3 h2,
+.content-5 h2 {
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.content-4 {
+    color: #FFFFFF;
+}
+
+.content-4 h2 {
+    font-size: 28px;
+    line-height: 32px;
+}
+
+#h-2 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 20px;
+    color: #C0C0C0;
+}
+
 header {
     background-color: black;
 }
@@ -188,11 +272,6 @@ header {
 
 .content-2 {
     background-color: black;
-}
-
-.content-3 {
-    background-image: url(./assets/images/section3.jpg);
-    background-repeat: no-repeat;
 }
 
 .content-2-1 {
@@ -217,4 +296,17 @@ header {
 .content-2-4 {
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.content-3 {
+    background-image: url(./assets/images/section3.jpg);
+    background-repeat: no-repeat;
+}
+
+.content-4 {
+    background-color: black;
+}
+
+.content-5 {
+    background-image: url(./assets/images/section5.jpg);
 }
