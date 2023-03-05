@@ -1,25 +1,42 @@
-body {
-    color: white;
-}
-
 section {
     display: grid;
 }
 
-.content-1 {
-    background-image: url(./assets/images/section1.jpg);
+header {
+    display: grid;
+    grid-template-columns: 10fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+}
+
+header img {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+header nav {
+    grid-column: 5 / 7;
+}
+
+header button {
+    grid-column: 8 / 9;
+
+}
+
+.menu {
+    display: flex;
 }
 
 .content-1 {
-    height: 714px;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 111px);
     grid-gap: 10px;
 }
 
 .content-1 h1 {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
+    align-self: center;
 }
 
 #h1 {
@@ -30,6 +47,7 @@ section {
 .content-1 p {
     grid-column: 2 / 3;
     grid-row: 5 / 6;
+    align-self: center;
 }
 
 .content-1 div {
@@ -39,9 +57,67 @@ section {
     justify-content: space-evenly;
 }
 
+.content-2 {
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-template-rows: repeat(20, 77px);
+}
 
+.content-2 h2 {
+    grid-row: 2 / 3;
+}
 
-.content-1 {
+.content-2 p {
+    grid-row: 3 / 4;
+}
+
+.content-2 div {
+    grid-row: 4 / 20;
+}
+
+.content-2 h2,
+.content-2 p,
+.content-2 div {
+    grid-column: 2 / 3;
+}
+
+.product-photography {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 32px;
+}
+
+.product-photography .content-2-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.product-photography .content-2-2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.product-photography .content-2-3 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.product-photography .content-2-4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.content-2-1 {
+    display: grid;
+    grid-template-columns: auto-fit;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.content-2-1 h3 {}
+
+.content-1,
+.content-2 {
     text-align: center;
     font-family: 'Poppins';
     font-style: normal;
@@ -49,7 +125,8 @@ section {
 }
 
 .content-1 p,
-#h1 {
+#h1,
+.product-photography {
     font-size: 14px;
     line-height: 20px;
     color: #C0C0C0;
@@ -65,4 +142,54 @@ section {
     font-size: 12px;
     line-height: 12px;
     color: #C0C0C0;
+}
+
+.content-2 h2 {
+    font-size: 40px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+
+.content-2 h3 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#content-2-p {
+    font-size: 23px;
+    line-height: 30px;
+    color: #C0C0C0;
+}
+
+.content-2 button {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+header {
+    background-color: black;
+}
+
+.content-1 {
+    background-image: url(./assets/images/section1.jpg);
+}
+
+.content-2 {
+    background-color: black;
+}
+
+.content-2-1 {
+    background-image: url(./assets/images/section2-1.jpg);
+}
+
+.content-2-2 {
+    background-image: url(./assets/images/section2-2.jpg);
+}
+
+.content-2-3 {
+    background-image: url(./assets/images/section2-3.png);
+}
+
+.content-2-4 {
+    background-image: url(./assets/images/section2-4.png);
 }
