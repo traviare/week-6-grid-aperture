@@ -1,6 +1,6 @@
 .container {
     max-width: 1200px;
-    padding: 0 10px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 
@@ -12,8 +12,9 @@
 
 .menu {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    gap: 0 35px;
+    padding: 15px 0;
+
 }
 
 section {
@@ -51,35 +52,29 @@ section {
     justify-content: space-evenly;
 }
 
-.content-2 {
-    display: grid;
-    grid-template-columns: 1fr 7fr 1fr;
-    grid-template-rows: repeat(20, 77px);
-}
-
 .content-2 h2 {
-    grid-row: 2 / 3;
+    padding: 120px 0 16px 0;
 }
 
 .content-2 p {
-    grid-row: 3 / 4;
-}
-
-.content-2 div {
-    grid-row: 4 / 20;
-}
-
-.content-2 h2,
-.content-2 p,
-.content-2 div {
-    grid-column: 2 / 3;
+    padding: 0 0 42px 0;
 }
 
 .product-photography {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 32px;
+    grid-gap: 20px;
+    padding: 0 60px 100px 60px;
+}
+
+.content-2-dv {
+    padding: 421px 30px 30px 30px;
+    text-align: left;
+}
+
+.content-2-dv p {
+    padding: 11px 0 13px 0;
 }
 
 .product-photography .content-2-1 {
@@ -101,14 +96,6 @@ section {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
-
-.content-2-1 {
-    display: grid;
-    grid-template-columns: auto-fit;
-    grid-template-rows: repeat(6, 1fr);
-}
-
-.content-2-1 h3 {}
 
 body {
     font-family: 'Poppins';
@@ -190,4 +177,12 @@ header {
 
 .content-2-4 {
     background-image: url(./assets/images/section2-4.png);
+}
+
+.content-2-1,
+.content-2-2,
+.content-2-3,
+.content-2-4 {
+    background-repeat: no-repeat;
+    background-size: cover;
 }
