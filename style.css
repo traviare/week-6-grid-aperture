@@ -59,7 +59,7 @@ section {
     display: grid;
 }
 
-#camera-settings {
+.camera-settings {
     display: flex;
     justify-content: space-evenly;
 }
